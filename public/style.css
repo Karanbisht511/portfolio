@@ -98,6 +98,8 @@ a {
   /* font-size: 25px; */
   height: 10vh;
   padding: 20px 0;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 .page-detail {
@@ -152,6 +154,10 @@ a {
 }
 
 @media (max-width: 600px) {
+  body {
+    max-width: 90vw;
+  }
+
   .container {
     height: 7vh;
     font-size: 10px;
@@ -170,6 +176,10 @@ a {
     font-weight: 0.5px;
     margin: 10px 0 30px 0;
   }
+  .page-detail {
+    height: 10vh;
+    padding-top: 50px;
+  }
 
   .web_dev_photo {
     width: 70vmin;
@@ -186,6 +196,13 @@ a {
     padding: 8px 10px;
     margin-top: 1px;
   }
+
+  #projects {
+    display: block;
+    width: 15vw;
+    margin: 0 auto 5px auto;
+  }
+
   .container_footer {
     height: 5vh;
   }
