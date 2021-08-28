@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+  max-width: 75vw;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.center {
+  width: 100%;
+}
+
+.container_header {
+  /* using flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* styling */
+  background-color: blueviolet;
+  border-bottom-left-radius: 25px;
+  color: white;
+  font-size: 25px;
+  height: 100px;
+}
+
+.name {
+  margin: 20px;
+}
+
+.navbar {
+  list-style: none;
+}
+
+.navbar > li {
+  display: inline;
+  margin: 15px;
+}
+
+#introduction {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 1px;
+
+  margin: 10px 0 30px 0;
+}
+
+.web_dev_photo {
+  width: 70vmin;
+  height: 70vmin;
+}
+
+.skills {
+  text-align: center;
+  /* height: 20vh; */
+  margin: 30px 0;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  padding: 25px 0;
+}
+
+.oc {
+  background-color: #f3f4f6;
+}
+
+.link {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 10px;
+  margin-top: 1px;
+}
+
+.link-blue {
+  background-color: blueviolet;
+}
+.link-white {
+  background-color: white;
+  border: 1px solid blueviolet;
+  color: black;
+}
+
+.container_footer {
+  text-align: center;
+
+  background-color: blueviolet;
+  border-top-right-radius: 25px;
+  color: white;
+  font-size: 25px;
+  height: 50px;
+  padding: 20px 0;
+}
+
+.page-detail {
+  height: 20vh;
+}
+
+.date {
+  color: violet;
+}
+
+.white-bg {
+  background-color: white;
+  color: black;
+  border: 1px solid blueviolet;
+}
