@@ -1,5 +1,6 @@
 const express = require("express");
 
+const PORT = 3000 || process.env.PORT;
 const app = express();
 
 app.use(express.static(__dirname + "/public"));
@@ -20,6 +21,6 @@ app.get("/blogs", (req, res) => {
   res.sendFile(__dirname + "/public/blog.html");
 });
 
-app.listen(3000, () => {
-  console.log("server running");
+app.listen(PORT, () => {
+  console.log("server running on", PORT);
 });
