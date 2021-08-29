@@ -41,6 +41,8 @@ a {
 
 .navbar {
   list-style: none;
+  width: 100px;
+  margin: auto;
 }
 
 .navbar > li {
@@ -160,7 +162,7 @@ a {
 
   .container {
     height: 7vh;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .name {
@@ -169,6 +171,7 @@ a {
 
   .navbar > li {
     margin: 10px;
+    font-size: 15px;
   }
 
   #introduction {
@@ -189,7 +192,7 @@ a {
   .skills {
     margin: 15px 0;
     padding: 15px 5px;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .link {
@@ -203,6 +206,9 @@ a {
     margin: 0 auto 5px auto;
   }
 
+  .footer_navbar > li {
+    font-size: 20px;
+  }
   .container_footer {
     height: 5vh;
   }
