@@ -41,13 +41,18 @@ a {
 
 .navbar {
   list-style: none;
-  width: 35vw;
-  /* margin: auto; */
+  /* width: 35vw;
+  margin: auto; */
 }
 
 .navbar > li {
   display: inline;
   margin: 15px;
+}
+
+.footer_navbar {
+  width: 35vw;
+  margin: auto;
 }
 
 #introduction {
@@ -155,7 +160,7 @@ a {
   }
 }
 
-@media (min-width: 500px) and (max-width: 600px) {
+@media (max-width: 600px) {
   body {
     max-width: 90vw;
   }
@@ -213,9 +218,9 @@ a {
   }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .container {
     height: 7vh;
     font-size: 0.5em;
   }
-}
+} */
