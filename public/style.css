@@ -19,7 +19,7 @@ a {
 
 .container {
   height: 15vh;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .container_header {
@@ -41,8 +41,8 @@ a {
 
 .navbar {
   list-style: none;
-  width: 100px;
-  margin: auto;
+  width: 35vw;
+  /* margin: auto; */
 }
 
 .navbar > li {
@@ -118,10 +118,10 @@ a {
   border: 1px solid blueviolet;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 860px) {
   .container {
     height: 10vh;
-    font-size: 17px;
+    font-size: 12px;
   }
 
   .name {
@@ -155,14 +155,14 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 500px) and (max-width: 600px) {
   body {
     max-width: 90vw;
   }
 
   .container {
     height: 7vh;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .name {
@@ -171,7 +171,6 @@ a {
 
   .navbar > li {
     margin: 10px;
-    font-size: 15px;
   }
 
   #introduction {
@@ -211,5 +210,12 @@ a {
   }
   .container_footer {
     height: 5vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    height: 7vh;
+    font-size: 0.5em;
   }
 }
