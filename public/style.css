@@ -1,226 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+:root {
+  font-size: 1px;
+}
+
 body {
-  margin: 0;
   box-sizing: border-box;
   font-family: "montserrat", sans-serif;
   max-width: 75vw;
   margin: auto;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.center {
-  width: 100%;
-}
-
-.container {
-  height: 15vh;
-  font-size: 20px;
-}
-
 .container_header {
-  /* using flexbox */
+  background-color: blueviolet;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* styling */
-  background-color: blueviolet;
-  border-bottom-left-radius: 25px;
-  color: white;
-  /* font-size: 25px; */
-  /* height: 15vh; */
+  border-bottom-left-radius: 15px;
+  font-size: 20rem;
 }
 
-.name {
-  margin: 20px;
-}
-
-.navbar {
-  list-style: none;
-  /* width: 35vw;
-  margin: auto; */
-}
-
-.navbar > li {
+.header_navbar > li {
   display: inline;
-  margin: 15px;
 }
-
-.footer_navbar {
-  width: 35vw;
-  margin: auto;
-}
-
-#introduction {
-  text-align: center;
-  font-size: 2em;
-  font-weight: 1px;
-  margin: 10px 0 30px 0;
-}
-
-.web_dev_photo {
-  width: 70vmin;
-  height: 70vmin;
-}
-
-.skills {
-  text-align: center;
-  /* height: 20vh; */
-  margin: 30px 0;
-  /* border: 2px solid black; */
-  border-radius: 10px;
-  padding: 25px 0;
-}
-
-.oc {
-  background-color: #f3f4f6;
-}
-
-.link {
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 8px 10px;
-  margin-top: 1px;
-}
-
-.link-blue {
-  background-color: blueviolet;
-}
-.link-white {
-  background-color: white;
-  border: 1px solid blueviolet;
-  color: black;
-}
-
-.container_footer {
-  text-align: center;
-  background-color: blueviolet;
-  border-top-right-radius: 25px;
+.container_header a {
   color: white;
-  /* font-size: 25px; */
-  height: 10vh;
-  padding: 20px 0;
-  /* position: absolute;
-  bottom: 0; */
+  text-decoration: none;
+  margin: 10px;
 }
 
-.page-detail {
-  height: 20vh;
+.header_content {
+  margin: 25px 10px;
 }
 
-.date {
-  color: violet;
-}
-
-.white-bg {
-  background-color: white;
-  color: black;
-  border: 1px solid blueviolet;
-}
-
-@media (min-width: 600px) and (max-width: 860px) {
-  .container {
-    height: 10vh;
-    font-size: 12px;
-  }
-
-  .name {
-    margin: 10px;
-  }
-
-  .navbar > li {
-    margin: 10px;
-  }
-
-  #introduction {
-    font-size: 1em;
-    font-weight: 0.5px;
-    margin: 10px 0 30px 0;
-  }
-
-  .web_dev_photo {
-    width: 70vmin;
-    height: 70vmin;
-  }
-
-  .skills {
-    margin: 15px 0;
-    padding: 15px 5px;
-    font-size: 15px;
-  }
-
-  .link {
-    padding: 8px 10px;
-    margin-top: 1px;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   body {
     max-width: 90vw;
   }
-
-  .container {
-    height: 5vh;
-    font-size: 10px;
-  }
-
   .name {
-    margin: 10px;
+    display: none;
   }
-
-  .navbar > li {
-    margin: 10px;
-  }
-
-  #introduction {
-    font-size: 1em;
-    font-weight: 0.5px;
-    margin: 10px 0 30px 0;
-  }
-  .page-detail {
-    height: 10vh;
-    padding-top: 50px;
-  }
-
-  .web_dev_photo {
-    width: 70vmin;
-    height: 70vmin;
-  }
-
-  .skills {
-    margin: 15px 0;
-    padding: 15px 5px;
-    font-size: 15px;
-  }
-
-  .link {
-    padding: 8px 10px;
-    margin-top: 1px;
-  }
-
-  #projects {
-    display: block;
-    width: 15vw;
-    margin: 0 auto 5px auto;
-  }
-
-  .footer_navbar > li {
-    font-size: 20px;
-  }
-  .container_footer {
-    height: 5vh;
+  .container_header {
+    justify-content: center;
   }
 }
-
-/* @media (max-width: 500px) {
-  .container {
-    height: 7vh;
-    font-size: 0.5em;
-  }
-} */
