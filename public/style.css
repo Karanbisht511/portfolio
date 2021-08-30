@@ -124,4 +124,9 @@ li {
   .content {
     font-size: 12px;
   }
+
+  .icon {
+    height: 5vw;
+    width: 5vw;
+  }
 }
