@@ -121,6 +121,12 @@ li {
     height: 70vw;
   }
 
+  .link {
+    display: block;
+    width: 25vw;
+    margin: 5px auto;
+  }
+
   .content {
     font-size: 12px;
   }
