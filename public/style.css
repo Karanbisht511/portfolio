@@ -62,12 +62,14 @@ li {
 
 .skills {
   margin: 10px 0px;
+  border-radius: 15px;
 }
 
 .content {
   text-align: center;
   font-size: 15rem;
   padding: 25px;
+  border-radius: 15px;
 }
 
 .link {
