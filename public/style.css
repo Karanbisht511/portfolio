@@ -58,4 +58,9 @@ body {
   #introduction {
     font-size: 15rem;
   }
+
+  .web_dev_photo {
+    width: 70vw;
+    height: 70vw;
+  }
 }
