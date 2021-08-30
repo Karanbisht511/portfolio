@@ -11,6 +11,7 @@ body {
   margin: auto;
 }
 
+/* header */
 .container_header {
   background-color: blueviolet;
   display: flex;
@@ -33,6 +34,17 @@ body {
   margin: 25px 10px;
 }
 
+/* INTRODUCTION */
+#introduction {
+  text-align: center;
+  font-size: 25rem;
+}
+
+.web_dev_photo {
+  width: 70vh;
+  height: 70vh;
+}
+
 @media (max-width: 650px) {
   body {
     max-width: 90vw;
@@ -42,5 +54,8 @@ body {
   }
   .container_header {
     justify-content: center;
+  }
+  #introduction {
+    font-size: 15rem;
   }
 }
