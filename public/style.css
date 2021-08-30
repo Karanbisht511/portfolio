@@ -11,6 +11,14 @@ body {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 /* header */
 .container_header {
   background-color: blueviolet;
@@ -24,18 +32,19 @@ body {
 .header_navbar > li {
   display: inline;
 }
+
 .container_header a {
   color: white;
-  text-decoration: none;
   margin: 10px;
 }
 
 .header_content {
-  margin: 25px 10px;
+  margin: 30px 10px;
 }
 
 /* INTRODUCTION */
 #introduction {
+  margin: 25px 0px;
   text-align: center;
   font-size: 25rem;
 }
@@ -45,22 +54,69 @@ body {
   height: 70vh;
 }
 
+/*  boxes */
+
+.oc {
+  background-color: #f3f4f6;
+}
+
+.skills {
+  margin: 10px 0px;
+}
+
+.content {
+  text-align: center;
+  font-size: 15rem;
+  padding: 25px;
+}
+
+.link {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.link-blue {
+  background-color: blueviolet;
+  color: white;
+}
+
+.container_footer {
+  border-top-right-radius: 15px;
+  text-align: center;
+  background-color: blueviolet;
+  font-size: 25rem;
+  padding: 5px;
+}
+
+.footer_navbar > li {
+  display: inline;
+  margin: 10px;
+}
+
 @media (max-width: 650px) {
   body {
     max-width: 90vw;
   }
+
   .name {
     display: none;
   }
+
   .container_header {
     justify-content: center;
   }
+
   #introduction {
-    font-size: 15rem;
+    font-size: 17rem;
   }
 
   .web_dev_photo {
     width: 70vw;
     height: 70vw;
+  }
+
+  .content {
+    font-size: 12px;
   }
 }
