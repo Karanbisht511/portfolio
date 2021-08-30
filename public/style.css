@@ -94,6 +94,11 @@ li {
   margin: 10px;
 }
 
+.icon {
+  height: 5vh;
+  width: 5vh;
+}
+
 @media (max-width: 650px) {
   body {
     max-width: 90vw;
