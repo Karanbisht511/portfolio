@@ -2,67 +2,52 @@
    "homePageData": [
         {
         "header":"Techologies",
-        "content":"I am familiar with cpp,html,css,javascipt,nodejs,express,reactjs",
-        "link":"see Technologies"
+        "content":["HTML","CSS","Javascript", "ReactJs","Redux", "Express","MongoDB","Cypress", "GIT/GitHub","Gitlab","Postman","VS-Code","Agility","QTest"],
+        "link":null
         },
         {
         "header":"Projects",
-        "content":" I like to showcase my work and thus, you can see my projects hosted online",
+        "content":["I like to showcase my work and thus, you can see my projects hosted online"],
         "link":"projects"
         },
         {
         "header":"Blogs",
-        "content":"I am also working on some technical and non techincal blogs. I like to document my journey of learning",
+        "content":["I am also working on some technical and non techincal blogs. I like to document my journey of learning"],
         "link":"blogs"
-        },
-        {
-            "header":"Techologies",
-            "content":"I am familiar with cpp,html,css,javascipt,nodejs,express,reactjs",
-            "link":"see Technologies"
-            },
-            {
-            "header":"Projects",
-            "content":" I like to showcase my work and thus, you can see my projects hosted online",
-            "link":"projects"
-            },
-            {
-            "header":"Blogs",
-            "content":"I am also working on some technical and non techincal blogs. I like to document my journey of learning",
-            "link":"blogs"
-            }
+        }
     ],
     "blogData": [
         {
         "header":"First blog",
-        "content":"Lorem ipsum dolor sit amet,consectetur adipisicing elit Eum",
+        "content":["Lorem ipsum dolor sit amet,consectetur adipisicing elit Eum"],
         "link":"more"
         },
         {
         "header":"Second blog",
-        "content":"Lorem ipsum dolor sit amet,consectetur adipisicing elit Eum",
+        "content":["Lorem ipsum dolor sit amet,consectetur adipisicing elit Eum"],
         "link":"more"
         },
         {
         "header":"Third blog",
-        "content":"Lorem ipsum dolor sit amet,consectetur adipisicing elit Eum",
+        "content":["Lorem ipsum dolor sit amet,consectetur adipisicing elit Eum"],
         "link":"more"
         }
     ],
     "projectData": [
         {
         "header":"techologies",
-        "content":"I am familiar with cpp,html,css,javascipt,nodejs,express,reactjs",
+        "content":["I am familiar with cpp,html,css,javascipt,nodejs,express,reactjs"],
         "link":"see Technologies"
         },
         {
-        "header":"projects",
-        "content":" I like to showcase my work and thus, you can see my projects hosted online",
-        "link":"projects"
-        },
-        {
-        "header":"blogs",
-        "content":"I am also working on some technical and non techincal blogs. I like to document my journey of learning",
-        "link":"blogs"
-        }
+            "header":"Projects",
+            "content":["I like to showcase my work and thus, you can see my projects hosted online"],
+            "link":"projects"
+            },
+            {
+            "header":"Blogs",
+            "content":["I am also working on some technical and non techincal blogs. I like to document my journey of learning"],
+            "link":"blogs"
+            }
     ]
 }
