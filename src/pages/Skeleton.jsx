@@ -2,13 +2,16 @@ import "./style.css"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import { Navigate,Outlet } from "react-router-dom";
 
-export default function Home() {
+export default function Skeleton() {
 
+    const curentPage = window.location.pathname
+    const { origin } = window.location
+    if (curentPage == '/') {
+        window.location.replace(origin + "/home")
+    }
     return <>
         <Header />
-        <Navigate to="/home" replace={true} />
         <Outlet />
         <Footer />
     </>
