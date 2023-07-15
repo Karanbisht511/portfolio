@@ -9,7 +9,7 @@ export default function Header() {
                <Link to='home' >Home</Link>
                <Link to='projects' >Projects</Link>
                <Link to='blogs' >Blogs</Link>
-               <Link to='admin' >Admin</Link>
+               {/* <Link to='admin' >Admin</Link> */}
             </ul>
         </header>
     </>
