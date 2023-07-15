@@ -2,15 +2,19 @@ import "./style.css"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import { Outlet } from "react-router-dom";
+import { useNavigate, Outlet } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Skeleton() {
+    const navigate = useNavigate();
 
-    const curentPage = window.location.pathname
-    const { origin } = window.location
-    if (curentPage == '/') {
-        window.location.replace(origin + "/home")
-    }
+    useEffect(() => {
+        const curentPage = window.location.pathname
+        if (curentPage == '/') {
+            navigate("/home")
+        }
+    }, [])
+
     return <>
         <Header />
         <Outlet />
