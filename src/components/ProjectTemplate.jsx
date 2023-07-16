@@ -1,4 +1,3 @@
-
 export default function ProjectTemplate({ info }) {
 
     const { Title, Description, Tech, Github, live, status } = info
