@@ -5,7 +5,7 @@ import ProjectTemplate from '../components/ProjectTemplate'
 export default function Projects() {
     return <>
     
-    <section id="introduction" class="center page-detail">
+    <section id="introduction" className="center page-detail">
       <p>
         <b>
           <span style={{color: 'darkcyan'}}>see </span
@@ -14,9 +14,9 @@ export default function Projects() {
       </p>
     </section>
 
-        {templateData && templateData['projectData'].map((item) => {
+        {templateData && templateData['projectData'].map((item,index) => {
             console.log("item:"+item)
-            return <ProjectTemplate info={item} />
+            return <ProjectTemplate key={index} info={item} />
         })}
 
     </>

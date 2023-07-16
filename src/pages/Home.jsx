@@ -9,9 +9,9 @@ export default function Home() {
     return <>
           <Intro />
 
-        {templateData && templateData["homePageData"].map((item) => {
+        {templateData && templateData["homePageData"].map((item,index) => {
             console.log("item:" + item)
-            return <Template info={item} />
+            return <Template key={index} info={item} />
         })}
 
     </>

@@ -15,7 +15,7 @@ export default function Template({ info }) {
                     {content.map((item, index) => { return <RoundBox key={index} skill={item} /> })}
                 </div>
                 }
-                {link && <Link to={`/${link}`}> <a id={link} className="link link-blue" >{link}</a> </Link>}
+                {link && <Link to={`/${link}`} className="link link-blue"  > {link} </Link>}
             </div>
         </section>
     </>
