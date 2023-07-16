@@ -8,6 +8,11 @@ p{
 font-size: 30rem;
 }
 
+.heading{
+  font-size: 20rem;
+  font-weight: bolder;
+}
+
 body {
   box-sizing: border-box;
   font-family: "montserrat", sans-serif;
@@ -79,7 +84,7 @@ li {
 .link {
   border: 1px solid black;
   border-radius: 20px;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .link-blue {
@@ -160,4 +165,24 @@ li {
   }
 }
 
+.left-align{
+  text-align: left;
+}
 
+.content-center{
+  width: 700px;
+  margin: auto;
+}
+
+.project-details{
+  margin-top: 10px;
+}
+
+.project-details tr td:nth-child(1){
+ margin-right: 20px;
+}
+
+.project-details tr td{
+padding: 10px;
+margin: 10px;
+}

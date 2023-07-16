@@ -1,5 +1,6 @@
 import templateData from '../data/dataFile'
 import Template from "../components/Template"
+import ProjectTemplate from '../components/ProjectTemplate'
 
 export default function Projects() {
     return <>
@@ -15,7 +16,7 @@ export default function Projects() {
 
         {templateData && templateData['projectData'].map((item) => {
             console.log("item:"+item)
-            return <Template info={item} />
+            return <ProjectTemplate info={item} />
         })}
 
     </>

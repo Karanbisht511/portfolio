@@ -35,19 +35,37 @@
     ],
     "projectData": [
         {
-        "header":"techologies",
-        "content":["I am familiar with cpp,html,css,javascipt,nodejs,express,reactjs"],
-        "link":"see Technologies"
+            "Title":"Portfolio",
+            "Description":"My portfolio website where i have showcased my works",
+            "Tech":"ReactJs",
+            "Github":"https://github.com/Karanbisht511/portfolio/tree/master",
+            "live":null,
+            "status":"Completed"
         },
         {
-            "header":"Projects",
-            "content":["I like to showcase my work and thus, you can see my projects hosted online"],
-            "link":"projects"
+        "Title":"Start Your Career",
+        "Description":"A platform where students can check the suitable colleges for themselves",
+        "Tech":"ReactJs",
+        "Github":"https://github.com/Karanbisht511/startYourCareer/tree/master",
+        "live":"https://chipper-bavarois-b7548c.netlify.app/",
+        "status":"In-Progress"
+        },
+        {
+            "Title":"Ecommerce website",
+            "Description":"A clone of ecommerce website",
+            "Tech":"ReactJs",
+            "Github":"https://github.com/Karanbisht511/eCom/tree/master",
+            "live":"https://neon-tapioca-94c048.netlify.app/product",
+            "status":"In-Progress"
             },
             {
-            "header":"Blogs",
-            "content":["I am also working on some technical and non techincal blogs. I like to document my journey of learning"],
-            "link":"blogs"
-            }
+                "Title":"Wedding planner",
+                "Description":"A platform where users can compare and book different things like resort, cosmetologist, etc.",
+                "Tech":"ReactJs, Express, MongoDB, NodeJs",
+                "Github":"https://github.com/Karanbisht511/something",
+                "live":null,
+                "status":"Completed"
+                }
+      
     ]
 }
