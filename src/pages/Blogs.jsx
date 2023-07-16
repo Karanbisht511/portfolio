@@ -3,7 +3,7 @@ import Template from "../components/Template"
 
 export default function Blogs() {
     return <>
-     
+    <div id='blog'>
      <section id="introduction" class="center page-detail">
       <p>
         <b>
@@ -17,6 +17,6 @@ export default function Blogs() {
             console.log("item:"+item)
             return <Template info={item} />
         })}
-
+</div>
     </>
 }

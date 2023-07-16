@@ -9,8 +9,8 @@ export default function ProjectTemplate({ info }) {
                 <table className="project-details">
                     {Description && <tbody><tr><td><span className="heading">Description :</span></td><td><span>{Description}</span></td></tr></tbody>}
                     {Tech && <tbody><tr><td><span className="heading">Tech :</span></td><td><span>{Tech}</span></td></tr></tbody>}
-                    {Github && <tbody><tr><td><span className="heading">Github :</span></td><td><a className="link link-blue" target="blank" href={Github}>See Github</a></td></tr></tbody>}
-                    {live && <tbody><tr><td><span className="heading">Live :</span></td><td><a className="link link-blue" target="blank" href={live}>See Live </a></td></tr></tbody>}
+                    {Github && <tbody><tr><td><span className="heading">Github :</span></td><td><a className="link link-blue" target="_blank" href={Github}>See Github</a></td></tr></tbody>}
+                    {live && <tbody><tr><td><span className="heading">Live :</span></td><td><a className="link link-blue" target="_blank" href={live}>See Live </a></td></tr></tbody>}
                     {status && <tbody><tr><td><span className="heading">Status :</span></td><td><span>{status}</span></td></tr></tbody>}
                 </table>
             </div>

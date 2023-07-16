@@ -6,6 +6,7 @@ export default function Footer() {
 
     return <>
         <footer className="container container_footer center">
+            
             <ul className="footer_navbar navbar">
                 <li>
                     <a target="_blank" href="https://github.com/Karanbisht511">
@@ -42,7 +43,10 @@ export default function Footer() {
                     </a>
                 </li>
             </ul>
+
+            {/* <div className='mail'>
+                karanbisht511@gmail.com
+            </div> */}
         </footer>
     </>
-
 }

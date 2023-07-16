@@ -7,12 +7,12 @@ import Template from "../components/Template"
 export default function Home() {
 
     return <>
+    <div id="home">
           <Intro />
-
         {templateData && templateData["homePageData"].map((item,index) => {
             console.log("item:" + item)
             return <Template key={index} info={item} />
         })}
-
+</div>
     </>
 }
