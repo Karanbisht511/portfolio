@@ -1,19 +1,37 @@
-export default function ProjectTemplate({ info }) {
+import InfoBox from "./InfoBox"
 
-    const { Title, Description, Tech, Github, live, status } = info
+export default function ProjectTemplate({ info, number }) {
+
+    const { Title, Description, Tech, Github, live, status,problemStatement,solution } = info
 
     return <>
-        <section className="center skills oc">
-            <div className="content content-center left-align">
-                {Title && <div style={{ textAlign: 'center' }}><span className="heading">{Title}</span></div>}
-                <table className="project-details">
-                    {Description && <tbody><tr><td><span className="heading">Description :</span></td><td><span>{Description}</span></td></tr></tbody>}
-                    {Tech && <tbody><tr><td><span className="heading">Tech :</span></td><td><span>{Tech}</span></td></tr></tbody>}
-                    {Github && <tbody><tr><td><span className="heading">Github :</span></td><td><a className="link link-blue" target="_blank" href={Github}>See Github</a></td></tr></tbody>}
-                    {live && <tbody><tr><td><span className="heading">Live :</span></td><td><a className="link link-blue" target="_blank" href={live}>See Live </a></td></tr></tbody>}
-                    {status && <tbody><tr><td><span className="heading">Status :</span></td><td><span>{status}</span></td></tr></tbody>}
-                </table>
+        <section className="template-project">
+            <div className="project-wrapper">
+                {/* <div className="left"> */}
+                <div className="project-template-heading-container">
+                    <span className="project-template-heading">&lt;{Title}&gt;</span>
+                </div>
+                <div className="links">
+                    <InfoBox info={Tech} />
+                    <InfoBox info="Github" />
+                    <InfoBox info="Live Projects" link={live} />
+                </div>
+                {/* </div> */}
+                {/* <div className="right"> */}
+                <div className="project-number">project 0{number + 1}.</div>
+                <div className="statement">
+                    <div>
+                        <h1 className="problem-statement">Problem Statement</h1>
+                        <p className="para">{problemStatement}</p>
+                    </div>
+
+                    <div>
+                        <h1 className="solution">Solution</h1>
+                        <p className="para">{solution}</p>
+                    </div>
+                </div>
             </div>
+            {/* </div> */}
         </section>
     </>
 }

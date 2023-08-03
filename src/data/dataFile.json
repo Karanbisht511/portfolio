@@ -40,7 +40,9 @@
             "Tech":"ReactJs",
             "Github":"https://github.com/Karanbisht511/portfolio/tree/master",
             "live":"https://master--whimsical-puffpuff-496024.netlify.app/",
-            "status":"Completed"
+            "status":"Completed",
+            "problemStatement":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda ea commodi. Recusandae quo ullam repudiandae minus quae reiciendis eaque, natus earum ut magni alias laboriosam nam beatae dolores quis.",
+            "solution":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda ea commodi. Recusandae quo ullam repudiandae minus quae reiciendis eaque, natus earum ut magni alias laboriosam nam beatae dolores quis."
         },
         {
         "Title":"Start Your Career",
@@ -48,7 +50,9 @@
         "Tech":"ReactJs",
         "Github":"https://github.com/Karanbisht511/startYourCareer/tree/master",
         "live":"https://chipper-bavarois-b7548c.netlify.app/",
-        "status":"In-Progress"
+        "status":"In-Progress",
+        "problemStatement":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda ea commodi. Recusandae quo ullam repudiandae minus quae reiciendis eaque, natus earum ut magni alias laboriosam nam beatae dolores quis.",
+                "solution":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda ea commodi. Recusandae quo ullam repudiandae minus quae reiciendis eaque, natus earum ut magni alias laboriosam nam beatae dolores quis."
         },
         {
             "Title":"Ecommerce website",
@@ -56,15 +60,19 @@
             "Tech":"ReactJs",
             "Github":"https://github.com/Karanbisht511/eCom/tree/master",
             "live":"https://neon-tapioca-94c048.netlify.app/product",
-            "status":"In-Progress"
+            "status":"In-Progress",
+            "problemStatement":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda ea commodi. Recusandae quo ullam repudiandae minus quae reiciendis eaque, natus earum ut magni alias laboriosam nam beatae dolores quis.",
+                "solution":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda ea commodi. Recusandae quo ullam repudiandae minus quae reiciendis eaque, natus earum ut magni alias laboriosam nam beatae dolores quis."
             },
             {
                 "Title":"Wedding planner",
-                "Description":"A platform where users can compare and book different things like resort, cosmetologist, etc.",
-                "Tech":"ReactJs, Express, MongoDB, NodeJs",
+                "Description":"A platform where users can compare and book different arrangements like resort, cosmetologist, etc.",
+                "Tech":"ReactJs Express MongoDB NodeJs",
                 "Github":"https://github.com/Karanbisht511/something",
                 "live":null,
-                "status":"Completed"
+                "status":"Completed",
+                "problemStatement":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda ea commodi. Recusandae quo ullam repudiandae minus quae reiciendis eaque, natus earum ut magni alias laboriosam nam beatae dolores quis.",
+                "solution":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda ea commodi. Recusandae quo ullam repudiandae minus quae reiciendis eaque, natus earum ut magni alias laboriosam nam beatae dolores quis."
                 }
       
     ]

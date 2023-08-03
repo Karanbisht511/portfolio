@@ -1,6 +1,6 @@
 import '../pages/style.css'
 
-export default function RoundBox({ skill }) {
+export default function SkillBox({ skill }) {
 
     return <>
         <div className="skillBox">{skill}</div>
