@@ -7,7 +7,7 @@ export default function About() {
             <section id="introduction">
                 <div className='intro'>
                     <div className="intro-name sub-heading">Hello,I'm Karan Bisht,</div>
-                    <div className="intro-role">Frontend Developer</div>
+                    <div className="intro-role">Backend Developer</div>
                     <div className='link-resume link'> <a href="https://drive.google.com/file/d/1HJ0J3eg4K4CJHdvmGzeSlPm5-NhaJ0We/view?usp=drive_link" target='_blank'> Resume</a></div>
                 </div>
                 <div className='photo'>
