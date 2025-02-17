@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Github, Linkedin, Mail, Phone, BookOpen, User, Code, Briefcase, GraduationCap, Menu, X } from 'lucide-react';
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const NavLink = ({ section, icon, onClick }) => (
@@ -29,6 +29,13 @@ const Portfolio = () => {
     { icon: <Github size={18} />, text: 'GitHub', href: 'https://github.com/Karanbisht511' }
   ];
 
+  const sections = [
+    { id: 'about', icon: <User size={18} />, title: 'About' },
+    { id: 'skills', icon: <Code size={18} />, title: 'Skills' },
+    { id: 'experience', icon: <Briefcase size={18} />, title: 'Experience' },
+    { id: 'education', icon: <GraduationCap size={18} />, title: 'Education' }
+  ];
+
   return (
     <div className="min-h-screen bg-[#0a192f]">
       {/* Mobile Menu Button */}
@@ -39,37 +46,31 @@ const Portfolio = () => {
         {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
+      {/* Mobile Header - Always visible on mobile */}
+      <div className="md:hidden fixed top-0 left-0 right-0 bg-[#0a192f] p-4 z-40">
+        <h1 className="text-2xl font-bold text-white">Karan Bisht</h1>
+        <p className="text-blue-400">Full Stack Developer</p>
+      </div>
+
       {/* Sidebar Navigation */}
-      <nav className={`fixed top-0 left-0 h-full bg-[#0a192f] border-r border-gray-800 p-6 flex flex-col transform transition-transform duration-300 z-40
+      <nav className={`fixed top-0 left-0 h-screen bg-[#0a192f] p-6 flex flex-col transform transition-transform duration-300 z-40
         md:w-64 md:translate-x-0 w-64 
         ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        <div className="mb-12">
+        <div className="mb-12 hidden md:block">
           <h1 className="text-2xl font-bold text-white mb-2">Karan Bisht</h1>
           <p className="text-blue-400">Full Stack Developer</p>
         </div>
 
         <div className="space-y-2">
-          <NavLink 
-            section="about" 
-            icon={<User size={18} />} 
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-          <NavLink 
-            section="skills" 
-            icon={<Code size={18} />} 
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-          <NavLink 
-            section="experience" 
-            icon={<Briefcase size={18} />} 
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-          <NavLink 
-            section="education" 
-            icon={<GraduationCap size={18} />} 
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
+          {sections.map((section) => (
+            <NavLink 
+              key={section.id}
+              section={section.id} 
+              icon={section.icon}
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+          ))}
         </div>
 
         <div className="mt-auto pt-6 space-y-4">
@@ -88,11 +89,46 @@ const Portfolio = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="md:ml-64 bg-[#0a192f] p-4 md:p-12 pt-16 md:pt-12">
-        <div className="w-full max-w-4xl text-gray-300">
+      <main className="md:ml-64 min-h-screen bg-[#0a192f] flex items-center justify-center p-0">
+        <div className="w-full max-w-4xl text-gray-300 p-4 md:p-12 mt-16 md:mt-0">
+          {/* Mobile Landing Section */}
+          {!activeSection && (
+            <div className="md:hidden space-y-8 animate-fadeIn">
+              <div className="text-center space-y-6">
+                <p className="text-blue-400 text-lg">Welcome to my portfolio</p>
+                <div className="grid grid-cols-2 gap-4">
+                  {sections.map((section) => (
+                    <button
+                      key={section.id}
+                      onClick={() => setActiveSection(section.id)}
+                      className="bg-[#112240] p-6 rounded-lg hover:bg-[#1a2f5c] transition-colors"
+                    >
+                      <div className="flex flex-col items-center gap-3">
+                        {section.icon}
+                        <span className="text-white font-medium">{section.title}</span>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+                <div className="flex justify-center gap-4 pt-6">
+                  {contactLinks.map((contact, index) => (
+                    <a
+                      key={index}
+                      href={contact.href}
+                      target="_blank"
+                      className="text-gray-300 hover:text-blue-400"
+                    >
+                      {contact.icon}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* About Section */}
           <section className={`space-y-8 ${activeSection === 'about' ? 'block' : 'hidden'}`}>
-            <div className="max-w-2xl">
+            <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">About Me</h2>
               <div className="prose prose-invert">
                 <p className="text-base md:text-lg leading-relaxed mb-6 text-gray-300">
