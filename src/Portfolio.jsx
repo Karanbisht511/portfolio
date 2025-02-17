@@ -88,11 +88,11 @@ const Portfolio = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="md:ml-64 min-h-screen bg-[#0a192f] flex items-center justify-center p-4 md:p-12 pt-16 md:pt-12">
+      <main className="md:ml-64 bg-[#0a192f] p-4 md:p-12 pt-16 md:pt-12">
         <div className="w-full max-w-4xl text-gray-300">
           {/* About Section */}
           <section className={`space-y-8 ${activeSection === 'about' ? 'block' : 'hidden'}`}>
-            <div className="max-w-2xl mx-auto">
+            <div className="max-w-2xl">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">About Me</h2>
               <div className="prose prose-invert">
                 <p className="text-base md:text-lg leading-relaxed mb-6 text-gray-300">
