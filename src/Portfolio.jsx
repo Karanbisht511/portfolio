@@ -356,7 +356,7 @@ const Portfolio = () => {
                     Chat Application
                   </h3>
                   <a
-                    href="https://github.com/Karanbisht511/chat-application"
+                    href="https://github.com/Karanbisht511/chat-app"
                     target="_blank"
                     className="text-blue-400 hover:text-blue-300 flex items-center gap-2"
                   >
@@ -425,7 +425,7 @@ const Portfolio = () => {
                     Full Stack Assignment - IBM FSD Training
                   </h3>
                   <a
-                    href="https://github.com/Karanbisht511/node-backend"
+                    href="https://github.com/Karanbisht511/FSD-Assignment"
                     target="_blank"
                     className="text-blue-400 hover:text-blue-300 flex items-center gap-2"
                   >
